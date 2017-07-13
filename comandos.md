@@ -9,16 +9,19 @@ _Work in progress_
 
 - `ls`: lista los contenidos de un directorio
   - `ls -l`: lista los archivos con datos de cada nodo, ordenados alfabéticamente
+  - `ls -t`: Lista todos los archivos agregando la hora en que fue creado el mismo
   - `ls -lS`: lista los contenidos ordenados por tamaño
   - `ls -lh`: lista los contenidos mostrando los datos legibles fácilmente (tamaño)
   - `ls -r`: lista los archivos ordenados de forma inversa (sirve con las banderas `S` y `t`)
 - `rm [FILE]`: elimina un archivo
+- `rm -i [FILE]`: elimina un directorio pero pregunta
 - `rm -rf [DIRECTORY]`: elimina un directorio recursivamente **sin preguntar**
 - `mv [FILE] [DIRECTORY]`: mueve FILE a DIRECTORY
 - `mv [FILE] [NAME]`: renombra FILE a NAME
 - `cd [DIRECTORY]`: lleva el PROMPT a DIRECTORY
 - `touch [FILE]`: si FILE existe, modifica la hora de última modificación al momento de la ejecución del comando, si FILE no existe, lo crea
 - `ln -s [DIRECTORY] [NAME]`: crea un _link_ simbólico llamado NAME hacia DIRECTORY, NAME se comporatará como DIRECTORY
+- `du -h --max-depth=1` : para saber el peso de los directorios en ubuntu
 - `tail`
 - `more`
 - `cat [nombre de archivo]`: permite visualizar el contenido de un archivo de texto
