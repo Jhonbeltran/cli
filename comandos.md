@@ -35,6 +35,7 @@ _Work in progress_
 - `cp [archivo/directorio origen] [archivo/directorio destino]`: copia un archivo o directorio desde un origen a un destino
 - `cp -r [directorio origen] [directorio destino]`: copia un directorio y todos sus directorios hijos de forma recursiva
 - `pushd [path]` para ir de un direcotorio 1 a un directorio 2 y `popd`: volver al directorio 2.
+- `open [archivo]` o `xdg-open [archivo]`: abriran un determiando archivo con su aplicación por defecto. 
 
 ### Operadores para STDIN, STDOUT/STDERR
 `````
