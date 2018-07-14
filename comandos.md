@@ -25,6 +25,8 @@ _Work in progress_
 - `clear`:limpia la terminal
 - `pwd`: imprime o muestra la ruta actual donde nos encontramos ubicados
 - `which [ejecutable]`: Nos dice donde se encuentra el ejecutable
+- `echo [string]`: imprime algo en la terminal
+- `echo $PATH`: imprime el path de binarios que aceptamos se ejecuten en nuestro sistema
 - `man [comando]`: muestra la documentacion de todos los comandos
 - `mkdir [nombre directorio]`: crea un directorio en la ubicación actual
 - `mkdir -p [ruta de directorios]`: crea un árbol de directorios completo que no existe
@@ -32,7 +34,8 @@ _Work in progress_
 - `cp -r [directorio origen] [directorio destino]`: copia un directorio y todos sus directorios hijos de forma recursiva
 - `pushd [path]` para ir de un direcotorio 1 a un directorio 2 y `popd`: volver al directorio 2.
 - `open [archivo]` o `xdg-open [archivo]`: abriran un determiando archivo con su aplicación por defecto.
-
+- `alias [nombre]='[comando]'`: para darle un alias a un determinado comando _Ejemplo_: `alias ll = 'ls -lh'`
+- `ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e  's/^//' -e 's/-/|/'`: comando para ver nuestro arbol de archivos en un determinado directorio
 ### Herramientas Básicas
 
 - `more [archivo]`: te da las primeras líneas de lo que hay en el archivo. Para ver la siguiente página hacemos lo mismo que con el man, utilizamos espacio para avanzar una linea, b para regresar.
