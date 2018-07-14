@@ -58,6 +58,7 @@ Manda el STDOUT de `command_1` al STDIN de `command_2`
 
 #### operador `>`
 `command_1 > FILE`
+_Ejemplo_: `cat > namefile.txt`
 Manda el STDOUT de `command_1` al inicio de FILE. Si FILE no existe lo crea, si existe **lo sobreescribe**.
 
 #### operador `>>`
