@@ -24,6 +24,7 @@ _Work in progress_
 - `du -h --max-depth=1` : para saber el peso de los directorios en ubuntu
 - `clear`:limpia la terminal
 - `pwd`: imprime o muestra la ruta actual donde nos encontramos ubicados
+- `which [ejecutable]`: Nos dice donde se encuentra el ejecutable
 - `man [comando]`: muestra la documentacion de todos los comandos
 - `mkdir [nombre directorio]`: crea un directorio en la ubicación actual
 - `mkdir -p [ruta de directorios]`: crea un árbol de directorios completo que no existe
