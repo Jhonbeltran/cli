@@ -30,7 +30,7 @@ _Work in progress_
 - `man [comando]`: muestra la documentacion de todos los comandos
 - `cat` [nombre de archivo]: permite visualizar el contenido de un archivo de texto
 - `mkdir` [nombre directorio]: crea un directorio en la ubicación actual
-- `mkdir` -p [ruta de directorios]: crea un árbol de directorios completo que no existe
+- `mkdir -p ` [ruta de directorios]: crea un árbol de directorios completo que no existe
 - `cp` [archivo/directorio origen] [archivo/directorio destino]: copia un archivo o directorio desde un origen a un destino
 - `cp` -r [directorio origen] [directorio destino]: copia un directorio y todos sus directorios hijos de forma recursiva
 
