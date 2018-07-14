@@ -41,8 +41,9 @@ _Work in progress_
 - `more [archivo]`: te da las primeras líneas de lo que hay en el archivo. Para ver la siguiente página hacemos lo mismo que con el man, utilizamos espacio para avanzar una linea, b para regresar.
 - `cat [archivo]`: imprime todo el contenido de un archivo en pantalla.
 - `tail [archivo]`: te muestra las últimas 10 líneas de un archivo. Puedes agregarle un número con el `tail [archivo] -[numero]` pedir la cantidad de líneas que necesites.
+- `tail -f [archivo]`: nos imprime la ultima linea de un archivo por "siempre". Ideal para archivos que siempre se estan escribiendo y queremos ver la última linea que se agregó
 
-### Operadores para STDIN, STDOUT/STDERR
+### Operadores para STDIN, STDOUT/STDERR [STREAMS]
 `````
       entrada      ->    ejecución     ->        salida
                                  +-------> STDOUT (1)
@@ -63,7 +64,7 @@ Manda el STDOUT de `command_1` al STDIN de `command_2`
 #### operador `>`
 `command_1 > FILE`
 _Ejemplo_: `cat > namefile.txt`
-Manda el STDOUT de `command_1` al inicio de FILE. Si FILE no existe lo crea, si existe **lo sobreescribe**.
+Manda el STDOUT de `command_1` al un archivo. Si FILE no existe lo crea, si existe **lo sobreescribe**.
 
 #### operador `>>`
 `command_1 >> FILE`
