@@ -36,7 +36,7 @@ _Work in progress_
 
 - `more [archivo]`: te da las primeras líneas de lo que hay en el archivo. Para ver la siguiente página hacemos lo mismo que con el man, utilizamos espacio para avanzar una linea, b para regresar.
 - `cat [archivo]`: imprime todo el contenido de un archivo en pantalla.
-- `tail [archivo]`: te muestra las últimas 10 líneas de un archivo. Puedes agregarle un número con el - y pedir más que 10 líneas.
+- `tail [archivo]`: te muestra las últimas 10 líneas de un archivo. Puedes agregarle un número con el `tail [archivo] -[numero]` pedir la cantidad de líneas que necesites.
 
 ### Operadores para STDIN, STDOUT/STDERR
 `````
