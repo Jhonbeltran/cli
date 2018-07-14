@@ -33,6 +33,7 @@ _Work in progress_
 - `mkdir -p [ruta de directorios]`: crea un árbol de directorios completo que no existe
 - `cp [archivo/directorio origen] [archivo/directorio destino]`: copia un archivo o directorio desde un origen a un destino
 - `cp -r [directorio origen] [directorio destino]`: copia un directorio y todos sus directorios hijos de forma recursiva
+- `pushd [path]` para ir de un direcotorio 1 a un directorio 2 y `popd`: volver al directorio 2.
 
 ### Operadores para STDIN, STDOUT/STDERR
 `````
