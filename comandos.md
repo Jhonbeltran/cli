@@ -22,8 +22,9 @@ _Work in progress_
 - `touch [FILE]`: si FILE existe, modifica la hora de última modificación al momento de la ejecución del comando, si FILE no existe, lo crea
 - `ln -s [DIRECTORY] [NAME]`: crea un _link_ simbólico llamado NAME hacia DIRECTORY, NAME se comporatará como DIRECTORY
 - `du -h --max-depth=1` : para saber el peso de los directorios en ubuntu
-- `tail`
-- `more`
+- `more [archivo]`: te da las primeras líneas de lo que hay en el archivo. Para ver la siguiente página hacemos lo mismo que con el man, utilizamos espacio para
+- `cat [archivo]`: imprime todo el contenido de un archivo en pantalla.
+- `tail [archivo]`: te muestra las últimas 10 líneas de un archivo. Puedes agregarle un número con el - y pedir más que 10 líneas.
 - `cat [nombre de archivo]`: permite visualizar el contenido de un archivo de texto
 - `clear`:limpia la terminal
 - `pwd`: imprime o muestra la ruta actual donde nos encontramos ubicados
