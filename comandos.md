@@ -22,7 +22,7 @@ _Work in progress_
 - `cd [DIRECTORY]`: lleva el PROMPT a DIRECTORY
 - `touch [FILE]`: si FILE existe, modifica la hora de última modificación al momento de la ejecución del comando, si FILE no existe, lo crea
 - `ln -s [DIRECTORY] [NAME]`: crea un _link_ simbólico llamado NAME hacia DIRECTORY, NAME se comporatará como DIRECTORY
-- `du -h --max-depth=1` : para saber el peso de los directorios en ubuntu
+- `du -h --max-depth=1` o `du -h -d 1` : para saber el peso de los directorios en derivados de Debian
 - `clear`:limpia la terminal
 - `pwd`: imprime o muestra la ruta actual donde nos encontramos ubicados
 - `which [ejecutable]`: Nos dice donde se encuentra el ejecutable

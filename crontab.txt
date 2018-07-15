@@ -28,3 +28,6 @@ para ver la lista de tareas
 ➜ crontab -l
 
 *	*	*	*	*	$HOME/cronjobs/algo.sh
+
+Las salidas de ejecución no se van a mostrar directamente en nuestra terminal,
+lo que podemos hacer es enviarlo a un archivo usando >> o >
