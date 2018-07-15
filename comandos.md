@@ -13,6 +13,7 @@ _Work in progress_
   - `ls -lS`: lista los contenidos ordenados por tamaño
   - `ls -lh`: lista los contenidos mostrando los datos legibles fácilmente (tamaño)
   - `ls -r`: lista los archivos ordenados de forma inversa (sirve con las banderas `S` y `t`)
+  - `ls *.jpg`: Lista los archivos que cumplan con la expresión
 - `rm [FILE]`: elimina un archivo
 - `rm -i [FILE]`: elimina un directorio pero pregunta
 - `rm -rf [DIRECTORY]`: elimina un directorio recursivamente **sin preguntar**
@@ -36,6 +37,7 @@ _Work in progress_
 - `open [archivo]` o `xdg-open [archivo]`: abriran un determiando archivo con su aplicación por defecto.
 - `alias [nombre]='[comando]'`: para darle un alias a un determinado comando _Ejemplo_: `alias ll = 'ls -lh'`
 - `ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e  's/^//' -e 's/-/|/'`: comando para ver nuestro arbol de archivos en un determinado directorio
+- `date`: nos da la fecha hasta segundos
 ### Herramientas Básicas
 
 - `more [archivo]`: te da las primeras líneas de lo que hay en el archivo. Para ver la siguiente página hacemos lo mismo que con el man, utilizamos espacio para avanzar una linea, b para regresar.
