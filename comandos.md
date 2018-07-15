@@ -42,6 +42,8 @@ _Work in progress_
 - `cat [archivo]`: imprime todo el contenido de un archivo en pantalla.
 - `tail [archivo]`: te muestra las últimas 10 líneas de un archivo. Puedes agregarle un número con el `tail [archivo] -[numero]` pedir la cantidad de líneas que necesites.
 - `tail -f [archivo]`: nos imprime la ultima linea de un archivo por "siempre". Ideal para archivos que siempre se estan escribiendo y queremos ver la última linea que se agregó
+- `ps -wS`: nos dice que procesos se estan ejecutando en el sistema
+- `command | wc -l`: nos dice la cantidad de lineas de una ejecución
 
 ### Operadores para STDIN, STDOUT/STDERR [STREAMS]
 `````
@@ -68,14 +70,22 @@ Manda el STDOUT de `command_1` al un archivo. Si FILE no existe lo crea, si exis
 
 #### operador `>>`
 `command_1 >> FILE`
-Manda el STDOUT de `command_1` al inicio de FILE. Si FILE no existe lo crea, si existe **lo concatena al fina** (tras un _newline_).
+Manda el STDOUT de `command_1` al inicio de FILE. Si FILE no existe lo crea, si existe **lo concatena al final** (tras un _newline_).
 
 #### operador `<`
 `command_1 < FILE`
 Manda al STDIN de `command_1` el contenido de FILE.
 
-#### redirección de salidas
+#### operador `;`
+`command_1 ; command_2`
+Ejecuta el `command_1` y sólamente cuando acabe se va a ejecutar el `command_2`
+
+### redirección de salidas
 1. `command > FILE` - manda el STDOUT a FILE
-1. `command 1> FILE 2>FILE_ERROR` - manda el STDOUT a FILE y el STDERR a FILE_ERROR
+1. `command 1> FILE 2> FILE_ERROR` - manda el STDOUT a FILE y el STDERR a FILE_ERROR
 1. `command > FILE 2>&1` - manda, tanto el STDOUT como el STDERR a FILE
 1.- `command >> FILE 2>&1` - manda a **concatenar** las salidas de STDOUT y STDERR a FILE,
+
+### Procesos desde la terminal
+- En top `kill -9 [PID]` en htop Press F9: Para matar un determiando proceso
+- `[comando] &`: Para enviar el proceso a segundo plano
