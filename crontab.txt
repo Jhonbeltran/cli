@@ -1,0 +1,30 @@
++-----------------  minutos [0-59]
+|
+|  +--------------  horas [0-23]
+|  |
+|  |  +-----------  dia del mes [1-31]
+|  |  |
+|  |  |  +--------  mes [1-12]
+|  |  |  |
+|  |  |  |  +-----  dia de la semana [0 domingo - 6 sabado]
+|  |  |  |  |
+
+*  *  *  *  *  script.sh
+
+
+*       - todos los valores
+1-10    - de 1 a 10
+*/5     - cada 5
+1,3,5,9 - lista
+
+los errores de crontab los podemos ver en:
+➜ /var/mail/[nombredeusuario]
+o escribiendo ➜ mail
+
+para entrar al editor del crontab
+➜ crontab -e
+
+para ver la lista de tareas
+➜ crontab -l
+
+*	*	*	*	*	$HOME/cronjobs/algo.sh
